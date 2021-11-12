@@ -1,0 +1,64 @@
+body
+{
+    background-image: url(Mainpage_pics/mainbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: arial;
+    color: white;
+}
+span
+{
+    font-family: cambria;
+    background-color: rgb(24, 140, 207);
+    border-radius: 10px;
+}
+p
+{
+    font-style: tahoma;
+    color: white;
+}
+button
+{
+    color: rgb(24, 140, 207);
+    background-color: white;
+    width: 130px;
+    height: 30px;
+    font-family: trebuchet ms;
+    font-size: 13px;
+    font-weight: bold;
+}
+th
+{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 75px;
+    color: rgb(24, 140, 207);
+    text-shadow: 2px 2px 4px white
+}
+td
+{
+    font-family: Garamond, serif;
+    font-size: 30px;
+}
+table
+{
+    border: none;
+    width: 750px;
+    text-align: center;
+}
+#one
+{
+    color: gold;
+}
+#two
+{
+    color: white
+}
+#three
+{
+    color: rgb(24, 140, 207)
+}
+#four
+{
+    color: violet
+}

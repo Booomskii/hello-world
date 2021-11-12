@@ -1,0 +1,41 @@
+body
+{
+    background-image: url(Mainpage_pics/mainbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: arial;
+    color: white;
+}
+span
+{
+    font-family: cambria;
+    background-color: rgb(24, 140, 207);
+    border-radius: 10px;
+}
+p
+{
+    font-style: tahoma;
+    color: white;
+    text-align: left;
+    text-indent: 20px;
+}
+h1
+{
+    text-align: left;
+    text-indent: 20px;
+}
+img
+{
+    border-radius: 20px;
+}
+#button
+{
+    color: rgb(24, 140, 207);
+    background-color: white;
+    width: 130px;
+    height: 30px;
+    font-family: trebuchet ms;
+    font-size: 13px;
+    font-weight: bold;
+}
