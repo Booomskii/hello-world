@@ -33,7 +33,7 @@ int main()
             cout << "\n\t\t\t\t\t\t FoodMonkey" << endl;
             cout << "\t\t\t\t  Your Number 1 Food Delivery App on the Go!\n\n" << endl;
             cout << "\n\t\t\t Username/Email Address: ";
-            cin.ignore(32,'\n');
+            cin.ignore(1,'\n');
             getline (cin, loguser);
             cout << "\n\t\t\t Password: ";
             getline (cin, logpass);
@@ -53,7 +53,7 @@ int main()
             cout << "\t\t\t\t  Your Number 1 Food Delivery App on the Go!\n\n" << endl;
             cout << "\n\t\t\t\t\t\tRegistration\n";
             cout << "\n\t\t\tFirst Name: ";
-            cin.ignore(49,'\n');
+            cin.ignore(1,'\n');
             getline (cin, regfname);
             cout << "\n\t\t\tLast Name: ";
             getline (cin, reglname);
@@ -92,7 +92,7 @@ int main()
                 n=1;
                 break;
                 default:
-                cout << "\n\t\t\tInputted number of instruction not assigned!" << endl;
+                cout << "\n\t\t\t\tInputted number of instruction not assigned!\n\n\n" << endl;
             }
             break;
             default:
