@@ -44,9 +44,14 @@ int main()
             getline (cin, loguser);
             cout << "\n\t\t\t Password: ";
             getline (cin, logpass);
-            if (loguser==regusername && loguser=="dev123" && logpass==regpass || logpass=="foodmonkey123")
+            if (loguser==regusername && logpass==regpass)
             {
-                cout << "\n\n\n\t\t\t\t\t     Welcome back, "<< regfname << deffname << "!" << endl;
+                cout << "\n\n\n\t\t\t\t\t     Welcome back, "<< regfname << "!" << endl;
+                n=0;
+            }
+            else if (loguser=="dev123" && logpass=="foodmonkey123")
+            {
+                cout << "\n\n\n\t\t\t\t\t     Welcome back, "<< deffname << "!" << endl;
                 n=0;
             }
             else
