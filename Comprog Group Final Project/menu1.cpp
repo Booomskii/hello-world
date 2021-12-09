@@ -24,9 +24,10 @@ int main()
     string logpass;
     int exit;
     int command;
-    int n=1;
+    int y=1;
+    int z=0;
 
-    while (n==1)
+    while (y==1)
     {
         cout << "\n\t\t\t\t\t\t FoodMonkey"<< endl;
         cout << "\t\t\t\t  Your Number 1 Food Delivery App on the Go!\n\n"<< endl;
@@ -39,6 +40,7 @@ int main()
             case 1:
             cout << "\n\t\t\t\t\t\t FoodMonkey" << endl;
             cout << "\t\t\t\t  Your Number 1 Food Delivery App on the Go!\n\n" << endl;
+            cout << "\n\t\t\t\t\t      Log-in to Account\n";
             cout << "\n\t\t\t Username: ";
             cin.ignore(1,'\n');
             getline (cin, loguser);
@@ -46,18 +48,18 @@ int main()
             getline (cin, logpass);
             if (loguser==regusername && logpass==regpass)
             {
-                cout << "\n\n\n\t\t\t\t\t     Welcome back, "<< regfname << "!" << endl;
-                n=0;
+                y=0;
+                z=1;
             }
             else if (loguser=="dev123" && logpass=="foodmonkey123")
             {
-                cout << "\n\n\n\t\t\t\t\t     Welcome back, "<< deffname << "!" << endl;
-                n=0;
+                y=0;
+                z=1;
             }
             else
             {
-                cout << "\n\t\t\t\tYou have entered wrong Username/Password!" << endl;
-                n=1;
+                cout << "\n\t\t\t\t   You have entered wrong Username/Password!\n\n\n" << endl;
+                y=1;
             }
             break;
             case 2:
@@ -82,7 +84,7 @@ int main()
             cout << "\n\t\t\tPassword: ";
             getline (cin, regpass);
             cout << "\n\t\t\t\t\t     Registration Done!\n\n\n" << endl;
-            n=1;
+            y=1;
             break;
             case 3:
             cout << "\n\t\t\t\t\t\t FoodMonkey" << endl;
@@ -96,10 +98,10 @@ int main()
             {
                 case 1:
                 cout << "\n\t\t\t\t\tThank you for using the App!";
-                n=0;
+                y=0;
                 break;
                 case 2:
-                n=1;
+                z=1;
                 break;
                 default:
                 cout << "\n\t\t\t\tInputted number of instruction not assigned!\n\n\n" << endl;
