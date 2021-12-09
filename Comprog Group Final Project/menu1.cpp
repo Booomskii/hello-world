@@ -11,8 +11,15 @@ int main()
     string regeaddress;
     string regaddress1;
     string regaddress2;
-    string regphonenum;
-    string regtelnum;
+    string regnum;
+    string defuser = "dev123";
+    string defpass = "foodmonkey123";
+    string deffname = "Food";
+    string deflname = "Monkey";
+    string defeaddress = "foodmonkey@gmail.com";
+    string defaddress1 = "Blk 1 Lot 55, Villa Celina 2C";
+    string defaddress2 = "Pakigne, Minglanilla, Cebu";
+    string defnum = "09271271924";
     string loguser;
     string logpass;
     int exit;
@@ -32,14 +39,14 @@ int main()
             case 1:
             cout << "\n\t\t\t\t\t\t FoodMonkey" << endl;
             cout << "\t\t\t\t  Your Number 1 Food Delivery App on the Go!\n\n" << endl;
-            cout << "\n\t\t\t Username/Email Address: ";
+            cout << "\n\t\t\t Username: ";
             cin.ignore(1,'\n');
             getline (cin, loguser);
             cout << "\n\t\t\t Password: ";
             getline (cin, logpass);
-            if (loguser==regusername || loguser==regeaddress && logpass==regpass)
+            if (loguser==regusername && loguser=="dev123" && logpass==regpass || logpass=="foodmonkey123")
             {
-                cout << "\n\n\n\t\t\t\t\t     Welcome back, "<< regfname << "!" << endl;
+                cout << "\n\n\n\t\t\t\t\t     Welcome back, "<< regfname << deffname << "!" << endl;
                 n=0;
             }
             else
@@ -63,10 +70,8 @@ int main()
             getline (cin, regaddress1);
             cout << "\n\t\t\tAddress 2: ";
             getline (cin, regaddress2);
-            cout << "\n\t\t\tPhone Number: ";
-            getline (cin, regphonenum);
-            cout << "\n\t\t\tTelephone Number: ";
-            getline (cin, regtelnum);
+            cout << "\n\t\t\tPhone Number/Telephone Num: ";
+            getline (cin, regnum);
             cout << "\n\t\t\tUsername: ";
             getline (cin, regusername);
             cout << "\n\t\t\tPassword: ";
